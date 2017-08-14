@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"net/http"
+	"os"
 	"telegram/controllers"
 	"telegram/models"
 	"time"
@@ -14,6 +16,14 @@ var smi *models.SendMessageInput
 var ctrl *controllers.ControllerInvokeTelegramAPI
 
 func main() {
+	http.HandleFunc("/", run)
+	fmt.Println("listening...")
+	err := http.ListenAndServe(":"+os.Getenv("PORT"), nil)
+	if err != nil {
+		panic(err)
+	}
+}
+func run(res http.ResponseWriter, req *http.Request) {
 	var Offset int
 	URL := "https://api.telegram.org/"
 	Token := "bot364404824:AAHzvBLmkQqvSiZBsyo5eTbEk6mvoH6sa8w"

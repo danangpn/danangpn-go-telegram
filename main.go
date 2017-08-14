@@ -22,15 +22,15 @@ func main() {
 		panic(err)
 
 	}//*/
-	http.HandleFunc("/", handler)
-	http.ListenAndServe(":8000", nil)
+	// http.HandleFunc("/", handler)
+	// http.ListenAndServe(":443", nil)
+	run()
 
 }
 func handler(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "Hi there, I love %s!", r.URL.Path[1:])
 }
-func run(res http.ResponseWriter, req *http.Request) {
-	fmt.Fprintln(res, "Hello World by Chee Yeo 2015")
+func run() {
 	var Offset int
 	URL := "https://api.telegram.org/"
 	Token := "bot364404824:AAHzvBLmkQqvSiZBsyo5eTbEk6mvoH6sa8w"

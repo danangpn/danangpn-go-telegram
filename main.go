@@ -24,6 +24,7 @@ func main() {
 	}
 }
 func run(res http.ResponseWriter, req *http.Request) {
+	fmt.Fprintln(res, "Hello World by Chee Yeo 2015")
 	var Offset int
 	URL := "https://api.telegram.org/"
 	Token := "bot364404824:AAHzvBLmkQqvSiZBsyo5eTbEk6mvoH6sa8w"

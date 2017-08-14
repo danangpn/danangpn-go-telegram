@@ -31,6 +31,6 @@ func main() {
 				Offset = upd.Result[i].UpdateID + 1
 			}
 		}
-		time.Sleep(3 * time.Second)
+		time.Sleep(5 * time.Second)
 	}
 }

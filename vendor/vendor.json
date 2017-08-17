@@ -1,0 +1,6 @@
+{
+    "rootPath": "github.com/danangpn/danangpn-go-telegram",
+    "heroku": {
+        "goVersion": "go1.8"
+         }
+}

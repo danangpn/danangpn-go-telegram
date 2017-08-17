@@ -3,8 +3,8 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"telegram/controllers"
-	"telegram/models"
+	"github.com/danangpn/danangpn-go-telegram/controllers"
+	"github.com/danangpn/danangpn-go-telegram/models"
 	"time"
 )
 

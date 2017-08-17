@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"net/http/httputil"
 	"net/url"
-	"telegram/models"
+	"github.com/danangpn/danangpn-go-telegram/models"
 )
 
 // var inp *models.CallInput

@@ -2,7 +2,7 @@ package controllers
 
 import (
 	"strconv"
-	"telegram/models"
+	"github.com/danangpn/danangpn-go-telegram/models"
 )
 
 // ControllerInvokeTelegramAPI struc

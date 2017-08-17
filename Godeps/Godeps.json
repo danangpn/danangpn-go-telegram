@@ -1,5 +1,5 @@
 {
-	"ImportPath": "telegram",
+	"ImportPath": "github.com/danangpn/danangpn-go-telegram",
 	"GoVersion": "go1.8",
 	"GodepVersion": "v79",
 	"Deps": []

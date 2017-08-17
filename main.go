@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"fmt"
 	"net/http"
 	"github.com/danangpn/danangpn-go-telegram/controllers"
@@ -39,6 +40,7 @@ func run() {
 	for {
 		ctrl.GetUpdate(URL, Method, Token, Offset, &upd)
 		fmt.Printf("\nResult getUpdate: %+v\n", upd)
+		log.Printf("\nResult getUpdate: %+v\n", upd)
 		if len(upd.Result) != 0 {
 			for i := 0; i < len(upd.Result); i++ {
 				ChatID := upd.Result[i].Message.Chat.ID
